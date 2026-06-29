@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kiya Software Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="preloader-spinner"></div>
+</div>
+
+<!-- Back to Top -->
+<button id="backToTop" class="btn-orange" style="position:fixed;bottom:30px;right:30px;z-index:999;width:50px;height:50px;border-radius:50%;display:none;align-items:center;justify-content:center;font-size:1.2rem;padding:0;opacity:0;transition:all 0.3s ease;">
+    <i class="bi bi-arrow-up"></i>
+</button>
+<style>#backToTop.show { display: flex !important; opacity: 1; }</style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-code-slash me-2"></i>Kiya Software</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-orange">Get a Quote</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 data-aos="fade-up">Contact Us</h1>
+        <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Contact Info Cards -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card text-center h-100">
+                    <div class="icon-box mx-auto">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Email Us</h5>
+                    <p class="text-muted mb-1 small">Drop us a line anytime</p>
+                    <a href="mailto:nirmal@kiyasoftwaresolutions.in" style="color:var(--orange);" class="fw-semibold text-decoration-none">nirmal@kiyasoftwaresolutions.in</a>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card text-center h-100">
+                    <div class="icon-box mx-auto">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Call Us</h5>
+                    <p class="text-muted mb-1 small">Mon - Sat, 9AM to 7PM</p>
+                    <a href="tel:7879428228" style="color:var(--orange);" class="fw-semibold text-decoration-none">+91 7879428228</a>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card text-center h-100">
+                    <div class="icon-box mx-auto">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Visit Us</h5>
+                    <p class="text-muted mb-1 small">Our office location</p>
+                    <span style="color:var(--orange);" class="fw-semibold">India</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row g-5">
+            <div class="col-lg-7" data-aos="fade-right">
+                <div class="service-card" style="padding:3rem;">
+                    <h3 class="fw-bold mb-2">Send Us a Message</h3>
+                    <p class="text-muted mb-4">Fill out the form and we'll get back to you within 24 hours.</p>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label fw-semibold">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label fw-semibold">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-semibold">Email *</label>
+                                <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-semibold">Phone</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+91 98765 43210">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label fw-semibold">Subject *</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Select a subject</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-app">Mobile App Development</option>
+                                    <option value="cloud-solutions">Cloud Solutions</option>
+                                    <option value="ai-ml">AI & Machine Learning</option>
+                                    <option value="ui-ux">UI/UX Design</option>
+                                    <option value="consulting">IT Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-semibold">Message *</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-orange btn-lg w-100">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="service-card h-100" style="padding:2.5rem;">
+                    <h3 class="fw-bold mb-4">Get in Touch</h3>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-2"><i class="bi bi-clock me-2" style="color:var(--orange);"></i>Business Hours</h6>
+                        <p class="text-muted mb-1 small">Monday - Friday: 9:00 AM - 7:00 PM</p>
+                        <p class="text-muted mb-0 small">Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-2"><i class="bi bi-chat-dots me-2" style="color:var(--orange);"></i>Response Time</h6>
+                        <p class="text-muted mb-0 small">We typically respond within 24 hours during business days.</p>
+                    </div>
+                    <hr>
+                    <div class="text-center p-4 rounded-4" style="background:linear-gradient(135deg, #fff5f0, #fff);">
+                        <i class="bi bi-headset display-4 mb-2" style="color:var(--orange);"></i>
+                        <h6 class="fw-bold">Need Immediate Help?</h6>
+                        <p class="text-muted small mb-3">Call us directly for urgent inquiries</p>
+                        <a href="tel:7879428228" class="btn btn-orange">
+                            <i class="bi bi-telephone me-2"></i>+91 7879428228
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map -->
+<section class="py-5" style="background:#fafafa;">
+    <div class="container" data-aos="fade-up">
+        <div class="text-center mb-4">
+            <h3 class="fw-bold">Find Us on the <span style="color:var(--orange);">Map</span></h3>
+        </div>
+        <div class="rounded-4 overflow-hidden shadow-sm">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.1!2d77.4!3d23.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEyJzAwLjAiTiA3N8KwMjQnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" title="Kiya Software Solutions Location"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4 pb-4">
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-3"><i class="bi bi-code-slash me-2" style="color:var(--orange);"></i>Kiya Software Solutions</h5>
+                <p class="text-muted mb-4">A leading software development company delivering innovative solutions to businesses worldwide.</p>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                    <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                    <li class="mb-2"><a href="careers.html" class="text-muted text-decoration-none">Careers</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h6 class="fw-bold mb-3">Services</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Web Development</a></li>
+                    <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Mobile Apps</a></li>
+                    <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Cloud Solutions</a></li>
+                    <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">AI & ML</a></li>
+                    <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">UI/UX Design</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h6 class="fw-bold mb-3">Contact Info</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-envelope me-2" style="color:var(--orange);"></i><a href="mailto:nirmal@kiyasoftwaresolutions.in" class="text-muted text-decoration-none">nirmal@kiyasoftwaresolutions.in</a></li>
+                    <li class="mb-3"><i class="bi bi-telephone me-2" style="color:var(--orange);"></i><a href="tel:7879428228" class="text-muted text-decoration-none">+91 7879428228</a></li>
+                    <li class="mb-3"><i class="bi bi-geo-alt me-2" style="color:var(--orange);"></i><span class="text-muted">India</span></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color: rgba(255,255,255,0.1);">
+        <div class="row align-items-center pt-3">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 text-muted small">&copy; 2024 Kiya Software Solutions. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="text-muted text-decoration-none small me-3">Privacy Policy</a>
+                <a href="#" class="text-muted text-decoration-none small">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });</script>
+<script src="js/main.js"></script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Success animation
+        const btn = this.querySelector('button[type="submit"]');
+        btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Message Sent!';
+        btn.style.background = '#28a745';
+        setTimeout(() => {
+            btn.innerHTML = '<i class="bi bi-send me-2"></i>Send Message';
+            btn.style.background = '';
+            this.reset();
+        }, 3000);
+    });
+</script>
+</body>
+</html>
